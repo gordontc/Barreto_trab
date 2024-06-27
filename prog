@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EB Network</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .navbar, .footer, .card, .chat-section, .profile-section {
+            background-color: #222;
+        }
+        .btn-custom {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        .btn-custom:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .chat-section, .profile-section {
+            height: 100%;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">EB Network</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Marketplace</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Configuração</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisa" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisa</button>
+            </form>
+            <img src="https://via.placeholder.com/50" alt="Profile Image" class="profile-pic ml-3">
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <!-- Left Sidebar (Chat) -->
+            <div class="col-md-3">
+                <div class="chat-section p-3">
+                    <h5>Chat</h5>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Usuário 1</a>
+                        <a href="#" class="list-group-item list-group-item-action">Usuário 2</a>
+                        <a href="#" class="list-group-item list-group-item-action">Usuário 3</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content (Feed) -->
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Pedro Lucas</h5>
+                        <p class="card-text text-break">Pior jogo da história, como que o Brasil com 5 mudiais empata com uma 
+                            seleção da serie B da América, Vergonhoso !!</p>
+                        <img class="img-thumbnail" src="./img1.jpg">
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Diogo Clodoaldo</h5>
+                        <p class="card-text text-break">Vendendo minha moto: -120km rodado -2010 -único dono</p>
+                        <img class="img-thumbnail" src="./img2.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar (Profile Edit) -->
+            <div class="col-md-3">
+                <div class="profile-section p-3">
+                    <h5>Editor de Perfil</h5>
+                    <form>
+                        <div class="form-group">
+                            <label for="profileName">Nome</label>
+                            <input type="text" class="form-control" id="profileName" placeholder="Ensira Nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="profileEmail">Email</label>
+                            <input type="email" class="form-control" id="profileEmail" placeholder="Ensira email">
+                        </div>
+                        <div class="form-group">
+                            <label for="profileBio">Bio</label>
+                            <textarea class="form-control" id="profileBio" rows="3" placeholder="Ensira a bio"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-custom">Salvar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-3 mt-4">
+        <p>&copy; 2024 Rede social Simples e Prática.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
